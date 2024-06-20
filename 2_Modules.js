@@ -69,11 +69,12 @@
 // - **Modules**: Help in organizing code, enhancing reusability, preventing naming conflicts, and making testing easier.
 
 // By using the CommonJS module system, Node.js enables developers to build large and complex applications in a structured and maintainable way.
-const peter="peter"
-const john="john"
-const sayHi=(name)=>{
-    console,log(`Hello there ${name}`)
-}
+const names=require('./3_name')
+const sayHi=require('./4_utils')
+const data=require('./5_alternative_flavor')
+require('./6_mind_grenade')
+console.log(data)
+console.log(names)
 sayHi('susan')
 sayHi(peter)
 sayHi(john)
